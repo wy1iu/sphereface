@@ -43,7 +43,7 @@ If you find SphereFace useful in your research, please consider to cite:
 3. Requirements for `MTCNN` (see: [MTCNN - face detection & alignment](https://github.com/kpzhang93/MTCNN_face_detection_alignment)) and `Pdollar toolbox` (see: [Piotr's Image & Video Matlab Toolbox](https://github.com/pdollar/toolbox)).
 
 ### Installation
-1. Clone the SphereFace repository. We'll call the directory that you cloned SphereFace into `SPHEREFACE_ROOT`
+1. Clone the SphereFace repository. We'll call the directory that you cloned SphereFace as `SPHEREFACE_ROOT`.
 
     ```Shell
     git clone --recursive https://github.com/wy1iu/sphereface.git
