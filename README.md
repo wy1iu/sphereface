@@ -128,6 +128,7 @@ If you find SphereFace useful in your research, please consider to cite:
 ### Contact
 
 [Yandong Wen](ydwen.github.io)
+
 [Weiyang Liu](wyliu.com)
 
 Questions can also be left as issues in the repository. We will be happy to answer them.
