@@ -48,16 +48,7 @@ If you find SphereFace useful in your research, please consider to cite:
     git clone --recursive https://github.com/wy1iu/sphereface.git
     ```
 
-   or first clone the SphereFace repository and then clone the `MTCNN` & `pdollar toolbox` as submodules
-
-    ```Shell
-    git clone https://github.com/wy1iu/sphereface.git
-    cd $SPHEREFACE_ROOT/tools
-    git clone https://github.com/kpzhang93/MTCNN_face_detection_alignment.git
-    git clone https://github.com/pdollar/toolbox.git
-    ```
-
-3. Build Caffe and matcaffe
+2. Build Caffe and matcaffe
 
     ```Shell
     cd $SPHEREFACE_ROOT/tools/caffe-sphereface
