@@ -2,11 +2,11 @@
 
 By Weiyang Liu, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj and Le Song
 
-SphereFace was initially described in an [arXiv technical report](https://arxiv.org/abs/1704.08063) and then published in [CVPR 2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Liu_SphereFace_Deep_Hypersphere_CVPR_2017_paper.pdf).
-
 ### Introduction
 
-The repository contains the entire pipeline (including all the preprossings) for deep face recognition with SphereFace. The recognition pipeline contains three major steps: Face detection, face alignment and face recognition. To facilitate the face recognition research, we specify all these three steps in the repository. SphereFace is our proposed face recognition method. For face detection, we use the [MT-CNN](https://github.com/kpzhang93/MTCNN_face_detection_alignment).
+The repository contains the entire pipeline (including all the preprossings) for deep face recognition with **`SphereFace`**. The recognition pipeline contains three major steps: face detection, face alignment and face recognition.
+
+SphereFace is a recently proposed face recognition method. It was initially described in an [arXiv technical report](https://arxiv.org/abs/1704.08063) and then published in [CVPR 2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Liu_SphereFace_Deep_Hypersphere_CVPR_2017_paper.pdf). To facilitate the face recognition research, we give an example of training on [CAISA-WebFace](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) and testing on [LFW](http://vis-www.cs.umass.edu/lfw/). 
 
 The provided network prototxt example is a 28-layer CNN, which is the same as [Center Face](https://github.com/ydwen/caffe-face). To fully reproduce the results in the paper, you need to make some small modifications (network architecture) according to the SphereFace paper.
 
@@ -34,7 +34,7 @@ If you find SphereFace useful in your research, please consider to cite:
 ### Update
 - July 20, 2017
   * This repository was built.
-- To be update: 
+- To be updated: 
   * Our pretrained models, some intermediate results and extracted features will be released soon.
 
 ### Requirements
@@ -57,7 +57,7 @@ If you find SphereFace useful in your research, please consider to cite:
     #   http://caffe.berkeleyvision.org/installation.html
     # If you're experienced with Caffe and have all of the requirements installed
     # and your Makefile.config in place, then simply do:
-    make -j8 && make matcaffe
+    make all -j8 && make matcaffe
     ```
 
 ### Usage
@@ -65,58 +65,69 @@ If you find SphereFace useful in your research, please consider to cite:
 *After successfully completing [installation](#installation)*, you'll be ready to run all the following experiments.
 
 #### Part 1: Preprocessing
-**Note 1:** In this part, we assume you are in the directory *$SPHEREFACE_ROOT/preprocess/*
+**Note 1:** In this part, we assume you are in the directory `$SPHEREFACE_ROOT/preprocess/`
 1. Download the training set (`CASIA-WebFace`) and test set (`LFW`) and place them in $SPHEREFACE_ROOT/preprocess/data/.
 
 	```Shell
-	cd $SPHEREFACE_ROOT/preprocess
 	mv /your_path/CASIA_WebFace  data/
 	./code/get_lfw.sh
-	tar xvf data/lfw.tgz
+	tar xvf data/lfw.tgz -C data/
 	```
-
+    Please make sure that the directory of `data/` contains two datasets.
+    
 2. Detect faces and facial landmarks in CAISA-WebFace and LFW datasets using `MTCNN` (see: [MTCNN - face detection & alignment](https://github.com/kpzhang93/MTCNN_face_detection_alignment)).
 
 	```Matlab
 	# In Matlab Command Window
 	run code/face_detect_demo.m
 	```
-
+    This will create a file `dataList.mat` in the directory of `result/`.
 3. Align faces to a canonical pose using similarity transformation.
 
 	```Matlab
 	# In Matlab Command Window
   	run code/face_align_demo.m
   	```
+    This will create two folders (`CASIA-WebFace-112X96` and `lfw-112X96`) in the directory of `result/`, containing the aligned face images.
 
 #### Part 2: Train
-**Note 2:** In this part, we assume you are in the directory *$SPHEREFACE_ROOT/train/*
+**Note 2:** In this part, we assume you are in the directory `$SPHEREFACE_ROOT/train/`
 
-1. Get a list of training images.
+1. Get a list of training images and labels.
 
 	```Shell&Matlab
 	mv ../preprocess/result/CASIA-WebFace-112X96 data/
 	# In Matlab Command Window
 	run code/get_list.m
 	```
+    We move the aligned face images from *preprocess* folder to *train* folder and create a list `CASIA-WebFace-112X96.txt` in the directory of `data/` for training.
 
 2. Train sphereface model.
 
 	```Shell
 	./code/sphereface/sphereface_train.sh 0,1
 	```
-
+    We obtain a trained model `sphereface_model_iter_28000.caffemodel` and corresponding log file `sphereface.log` in the directory of `result/sphereface/`.
+    
 #### Part 3: Test
-**Note 3:** In this part, we assume you are in the directory *$SPHEREFACE_ROOT/test/*
+**Note 3:** In this part, we assume you are in the directory `$SPHEREFACE_ROOT/test/`
 
+1. Get the pair list of LFW (view 2).
+
+	```Shell
+	mv ../preprocess/result/lfw-112X96 data/
+	./code/get_pairs.sh
+	```
+	Make sure that the `pairs.txt` in the directory of `data/`
+	
 1. Extract deep features and test on LFW.
 
-	```Shell&Matlab
-	mv ../preprocess/result/lfw-112X96 data/
+	```Matlab
 	# In Matlab Command Window
 	run code/evaluation.m
 	```
-
+    Finally we get the accuracy.
+    
 ### Contact
 
   [Yandong Wen](https://ydwen.github.io) and [Weiyang Liu](https://wyliu.com)

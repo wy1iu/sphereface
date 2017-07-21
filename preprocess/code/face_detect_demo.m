@@ -1,3 +1,18 @@
+% --------------------------------------------------------
+% Copyright (c) Weiyang Liu, Yandong Wen
+% Licensed under The MIT License [see LICENSE for details]
+%
+% Intro:
+% This script is used to detect the faces in training & testing datasets (CASIA & LFW).
+% Face and facial landmark detection are performed by MTCNN (http://kpzhang93.github.io/papers/spl.pdf).
+%
+% Usage:
+% cd $SPHEREFACE_ROOT/preprocess
+% run code/face_detect_demo.m
+% --------------------------------------------------------
+
+function face_detect_demo()
+
 clear;clc;close all;
 cd('../');
 
@@ -61,7 +76,10 @@ for i = 1:length(dataList)
        dataList(i).facial5point = [];
     end
 end
+caffe.reset_all();
 save result/dataList.mat dataList
+
+end
 
 
 function list = collectData(folder, name)
@@ -70,12 +88,13 @@ function list = collectData(folder, name)
     fileName  = cell(size(subFolder));
     for i = 1:length(subFolder)
         fprintf('%s --- Collecting the %dth folder (total %d) ...\n', name, i, length(subFolder));
-        subList     = struct2cell(dir(fullfile(folder, subFolder{i})))';
-        fileName{i} = fullfile(folder, subFolder{i}, subList(3:end, 1));
+        subList     = struct2cell(dir(fullfile(folder, subFolder{i}, '*.jpg')))';
+        fileName{i} = fullfile(folder, subFolder{i}, subList(:, 1));
     end
     fileName   = vertcat(fileName{:});
     dataset    = cell(size(fileName));
     dataset(:) = {name};
     list       = cell2struct([fileName dataset], {'fileName', 'dataset'}, 2);
 end
-caffe.reset_all();
+
+

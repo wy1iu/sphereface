@@ -1,3 +1,19 @@
+% --------------------------------------------------------
+% Copyright (c) Weiyang Liu, Yandong Wen
+% Licensed under The MIT License [see LICENSE for details]
+%
+% Intro:
+% This script is used to evaluate the performance of the trained model on LFW dataset.
+% We perform 10-fold cross validation, using cosine similarity as metric.
+% More details about the testing protocol refers to LFW (http://vis-www.cs.umass.edu/lfw/).
+% 
+% Usage:
+% cd $SPHEREFACE_ROOT/test
+% run code/evaluation.m
+% --------------------------------------------------------
+
+function evaluation()
+
 clear;clc;close all;
 cd('../')
 
@@ -40,6 +56,9 @@ for i = 1:10
 end
 accs
 fprintf('the acc is %f', mean(accs)); 
+
+end
+
 
 function pairs = parseList(list, folder)
     i    = 0;

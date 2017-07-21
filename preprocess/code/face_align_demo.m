@@ -1,3 +1,18 @@
+% --------------------------------------------------------
+% Copyright (c) Weiyang Liu, Yandong Wen
+% Licensed under The MIT License [see LICENSE for details]
+%
+% Intro:
+% This script is used to align the faces by similarity transformation.
+% Here we only use five landmarks.
+%
+% Usage:
+% cd $SPHEREFACE_ROOT/preprocess
+% run code/face_align_demo.m
+% --------------------------------------------------------
+
+function face_align_demo()
+
 clear;clc;close all;
 cd('../');
 
@@ -32,16 +47,4 @@ for i = 1:length(dataList)
     imwrite(cropImg, fullfile(tPathStr, [name, '.jpg']), 'jpg');
 end
 
-%%% collect a list of aligned face images in CASIA-WebFace dataset
-%listName  = fullfile(pwd, 'result/CASIA-WebFace.txt');
-%fid       = fopen(listName, 'w');
-%imgDir    = fullfile(pwd, 'result/CASIA-WebFace/');
-%imgSubdir = dir(imgDir);
-%for i = 3:length(imgSubdir)
-%    fprintf('Collecting the %dth folder (total %d) ...\n', i-2, length(imgSubdir)-2);
-%    imgSublist = dir(fullfile(imgDir, imgSubdir(i).name));
-%    for j = 3:length(imgSublist)
-%        fprintf(fid, '%s\n', fullfile(imgDir, imgSubdir(i).name, imgSublist(j).name));
-%    end
-%end
-%fclose(fid);
+end
