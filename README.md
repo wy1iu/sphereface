@@ -125,8 +125,9 @@ If you find SphereFace useful in your research, please consider to cite:
 	run code/evaluation.m
 	```
 
-### Acknowledgement
+### Contact
 
-This repository and the face recognition pipeline are largely contributed by [Yandong Wen](http://ydwen.github.io/), who I personally learn a lot from. This repository will not even be possible without him. We also would like to sincerely thank [Kaipeng Zhang](http://kpzhang93.github.io/) for providing us with the amazing face detection method.
+[Yandong Wen](ydwen.github.io)
+[Weiyang Liu](wyliu.com)
 
-Questions can be left as issues in the repository. We will be happy to answer them.
+Questions can also be left as issues in the repository. We will be happy to answer them.
