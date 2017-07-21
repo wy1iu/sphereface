@@ -2,13 +2,13 @@
 
 By Weiyang Liu, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj and Le Song
 
-SphereFace was initially described in an [arXiv technical report](https://arxiv.org/abs/1704.08063) and was then published in [CVPR 2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Liu_SphereFace_Deep_Hypersphere_CVPR_2017_paper.pdf).
+SphereFace was initially described in an [arXiv technical report](https://arxiv.org/abs/1704.08063) and then published in [CVPR 2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Liu_SphereFace_Deep_Hypersphere_CVPR_2017_paper.pdf).
 
 ### Introduction
 
-The repository contains the entire pipeline (including all the preprossings) for deep face recognition with SphereFace. The recognition pipeline contains three major steps: Face detection, face alignment and face recognition. To facilitate all the reseachers, we specify all these three steps in the repository. SphereFace is our proposed face recognition method. For face detection, we use the [MT-CNN](https://github.com/kpzhang93/MTCNN_face_detection_alignment). 
+The repository contains the entire pipeline (including all the preprossings) for deep face recognition with SphereFace. The recognition pipeline contains three major steps: Face detection, face alignment and face recognition. To facilitate the face recognition research, we specify all these three steps in the repository. SphereFace is our proposed face recognition method. For face detection, we use the [MT-CNN](https://github.com/kpzhang93/MTCNN_face_detection_alignment).
 
-The provided network prototxt example is a 28-layer CNN, which is the same as [Center Face](https://github.com/ydwen/caffe-face). To fully reproduce the results in the paper, you need to make some modifications (e.g. network architecture) according to the SphereFace paper.
+The provided network prototxt example is a 28-layer CNN, which is the same as [Center Face](https://github.com/ydwen/caffe-face). To fully reproduce the results in the paper, you need to make some small modifications (network architecture) according to the SphereFace paper.
 
 ### License
 
@@ -34,7 +34,8 @@ If you find SphereFace useful in your research, please consider to cite:
 ### Update
 - July 20, 2017
   * This repository was built.
-- To be update: pretrained models, some intermediate results and extracted features will be released soon.
+- To be update: 
+  * Our pretrained models, some intermediate results and extracted features will be released soon.
 
 ### Requirements
 1. Requirements for `Matlab`
