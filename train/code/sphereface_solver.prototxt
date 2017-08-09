@@ -1,4 +1,4 @@
-net: "code/sphereface/sphereface_model.prototxt"
+net: "code/sphereface_model.prototxt"
 #test_iter: 100 
 #test_interval: 2000
 
@@ -15,6 +15,6 @@ display: 100
 momentum: 0.9
 weight_decay: 0.0005
 #snapshot: 1000
-snapshot_prefix: "result/sphereface/sphereface_model"
+snapshot_prefix: "result/sphereface_model"
 
 solver_mode: GPU

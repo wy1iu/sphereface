@@ -4,7 +4,7 @@
 %
 % Intro:
 % This script is used to align the faces by similarity transformation.
-% Here we only use five landmarks.
+% Here we only use five facial landmarks (two eyes, nose point and two mouth corners).
 %
 % Usage:
 % cd $SPHEREFACE_ROOT/preprocess
@@ -33,14 +33,14 @@ for i = 1:length(dataList)
     end
     dataList(i).facial5point = double(dataList(i).facial5point);
     % load and crop image
-    img     = imread(dataList(i).fileName);
-    transf  = cp2tform(dataList(i).facial5point, coord5point, 'similarity');
-    cropImg = imtransform(img, transf, 'XData', [1 imgSize(2)],...
-                                       'YData', [1 imgSize(1)], 'Size', imgSize);
+    img      = imread(dataList(i).file);
+    transf   = cp2tform(dataList(i).facial5point, coord5point, 'similarity');
+    cropImg  = imtransform(img, transf, 'XData', [1 imgSize(2)],...
+                                        'YData', [1 imgSize(1)], 'Size', imgSize);
     % save image
-    [sPathStr, name, ext] = fileparts(dataList(i).fileName);
-    tPathStr              = strrep(sPathStr, '/data/', '/result/');
-    tPathStr              = strrep(tPathStr, dataList(i).dataset, [dataList(i).dataset '-112X96']);
+    [sPathStr, name, ext] = fileparts(dataList(i).file);
+    tPathStr = strrep(sPathStr, '/data/', '/result/');
+    tPathStr = strrep(tPathStr, dataList(i).dataset, [dataList(i).dataset '-112X96']);
     if ~exist(tPathStr, 'dir')
        mkdir(tPathStr)
     end
