@@ -6,7 +6,7 @@ By Weiyang Liu, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj and Le Song
 
 The repository contains the entire pipeline (including all the preprossings) for deep face recognition with **`SphereFace`**. The recognition pipeline contains three major steps: face detection, face alignment and face recognition.
 
-SphereFace is a recently proposed face recognition method. It was initially described in an [arXiv technical report](https://arxiv.org/pdf/1704.08063.pdf) and then published in [CVPR 2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Liu_SphereFace_Deep_Hypersphere_CVPR_2017_paper.pdf). To facilitate the face recognition research, we give an example of training on [CAISA-WebFace](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) and testing on [LFW](http://vis-www.cs.umass.edu/lfw/). 
+SphereFace is a recently proposed face recognition method. It was initially described in an [arXiv technical report](https://arxiv.org/pdf/1704.08063.pdf) and then published in [CVPR 2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Liu_SphereFace_Deep_Hypersphere_CVPR_2017_paper.pdf). To facilitate the face recognition research, we give an example of training on [CAISA-WebFace](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) and testing on [LFW](http://vis-www.cs.umass.edu/lfw/) using the **20-layer CNN architecture** described in the paper (i.e. SphereFace-20). 
 
 ### License
 
@@ -36,7 +36,7 @@ If you find SphereFace useful in your research, please consider to cite:
 - July 20, 2017
   * This repository was built.
 - August 9, 2017
-  * Most of the bugs are fixed. A well-trained model with accuracy **99.30%** on **LFW** is released.
+  * Most of the bugs are fixed. SphereFace-20 prototxt file (**`$SPHEREFACE_ROOT/train/code/sphereface_model.prototxt`**) is released. This architecture is exactly the same as the 20-layer CNN reported in the paper. A well-trained model with accuracy **99.30%** on **LFW** is released.
 - To be updated:
   * Detected facial landmarks, training image list, training log and extracted features will be released soon.
 
@@ -44,7 +44,7 @@ If you find SphereFace useful in your research, please consider to cite:
 1. **Backward gradient.**
 	- In this implementation, we did not strictly follow the equations in paper. Instead, we normalize the scale of gradient to 1. It can be interpreted as a varying strategy for learning rate to help converge more stably. Similar idea and intuition also appear in https://arxiv.org/pdf/1707.04822.pdf
 	- More specifically, if the original gradient of ***f*** w.r.t ***x*** can be written as **df/dx = coeff_w \*  w + coeff_x \* x**, we use the normalized version **[df/dx] = (coeff_w \* w + coeff_x \* x) / norm_wx** to perform backward propragation, where norm_wx is **sqrt(coeff_w^2 + coeff_x^2)**. Same operation is also for the gradient of ***f*** w.r.t ***w***.
-	- If you use the original gradient to do the backprop, you could still make it work but need different lambda settings.
+	- If you use the original gradient to do the backprop, you could still make it work but may need different lambda settings.
 
 ### Requirements
 1. Requirements for `Matlab`
@@ -109,7 +109,7 @@ If you find SphereFace useful in your research, please consider to cite:
 	```
     The aligned face images in folder **`CASIA-WebFace-112X96/`** are moved from ***preprocess*** folder to ***train*** folder. A list `CASIA-WebFace-112X96.txt` is created in the directory of **`data/`** for the subsequent training.
 
-2. Train sphereface model.
+2. Train the sphereface model.
 
 	```Shell
 	./code/sphereface/sphereface_train.sh 0,1
@@ -133,7 +133,7 @@ If you find SphereFace useful in your research, please consider to cite:
 	# In Matlab Command Window
 	run code/evaluation.m
 	```
-    Finally we get the `sphereface_model.caffemodel`, extracted features `pairs.mat` in folder **`result/`** and accuracy on LFW like this.
+    Finally we have the `sphereface_model.caffemodel`, extracted features `pairs.mat` in folder **`result/`**, and accuracy on LFW like this:
 
 	fold|1|2|3|4|5|6|7|8|9|10|AVE
 	:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:
