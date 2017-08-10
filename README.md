@@ -43,7 +43,7 @@ If you find SphereFace useful in your research, please consider to cite:
 ### Disclaimer
 1. **Backward gradient.**
 	- In this implementation, we did not strictly follow the equations in paper. Instead, we normalize the scale of gradient to 1. It can be interpreted as a varying strategy for learning rate to help converge more stably. Similar idea and intuition also appear in https://arxiv.org/pdf/1707.04822.pdf
-	- More specifically, if the original gradient of ***f*** w.r.t ***x*** can be written as **df/dx = coeff_w \*  w + coeff_x \* x**, we use the normalized version **[df/dx] = (coeff_w \* w + coeff_x \* x) / norm_wx** to perform backward propragation, where norm_wx is **sqrt(coeff_w^2 + coeff_x^2)**. Same operation is also for the gradient of ***f*** w.r.t ***w***.
+	- More specifically, if the original gradient of ***f*** w.r.t ***x*** can be written as **df/dx = coeff_w \*  w + coeff_x \* x**, we use the normalized version **[df/dx] = (coeff_w \* w + coeff_x \* x) / norm_wx** to perform backward propagation, where norm_wx is **sqrt(coeff_w^2 + coeff_x^2)**. Same operation is also for the gradient of ***f*** w.r.t ***w***.
 	- If you use the original gradient to do the backprop, you could still make it work but need different lambda settings.
 
 ### Requirements
@@ -140,13 +140,13 @@ If you find SphereFace useful in your research, please consider to cite:
 	ACC|99.33%|99.17%|98.83%|99.50%|99.17%|99.83%|99.17%|98.83%|99.83%|99.33%|99.30%
 
 ### Models
-1. Visualizations of network achitecture (tools from [ethereon](http://ethereon.github.io/netscope/quickstart.html)):
+1. Visualizations of network architecture (tools from [ethereon](http://ethereon.github.io/netscope/quickstart.html)):
 	- SphereFace-20: [link](http://ethereon.github.io/netscope/#/gist/20f6ddf70a35dec5019a539a502bccc5)
 2. Model file
 	- SphereFace-20: [Google Drive](https://drive.google.com/open?id=0B_geeR2lTMegb2F6dmlmOXhWaVk)
 
 ### Results
-1. Following the instruction, we go though the entire pipline for 5 times. The accuracies on LFW are shown below.
+1. Following the instruction, we go through the entire pipeline for 5 times. The accuracies on LFW are shown below.
 
 	Experiment |#1|#2|#3 (released)|#4|#5
 	:---:|:---:|:---:|:---:|:---:|:---:
