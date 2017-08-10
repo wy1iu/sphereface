@@ -43,13 +43,8 @@ If you find SphereFace useful in your research, please consider to cite:
 ### Disclaimer
 1. **Backward gradient.**
 	- In this implementation, we did not strictly follow the equations in paper. Instead, we normalize the scale of gradient to 1. It can be interpreted as a varying strategy for learning rate to help converge more stably. Similar idea and intuition also appear in https://arxiv.org/pdf/1707.04822.pdf
-<<<<<<< HEAD
-	- More specifically, if the original gradient of ***f*** w.r.t ***x*** can be written as **df/dx = coeff_w \*  w + coeff_x \* x**, we use the normalized version **[df/dx] = (coeff_w \* w + coeff_x \* x) / norm_wx** to perform backward propagation, where norm_wx is **sqrt(coeff_w^2 + coeff_x^2)**. Same operation is also for the gradient of ***f*** w.r.t ***w***.
-	- If you use the original gradient to do the backprop, you could still make it work but need different lambda settings.
-=======
 	- More specifically, if the original gradient of ***f*** w.r.t ***x*** can be written as **df/dx = coeff_w \*  w + coeff_x \* x**, we use the normalized version **[df/dx] = (coeff_w \* w + coeff_x \* x) / norm_wx** to perform backward propragation, where **norm_wx** is **sqrt(coeff_w^2 + coeff_x^2)**. The same operation is also applied to the gradient of ***f*** w.r.t ***w***.
 	- If you use the original gradient to do the backprop, you could still make it work but may need different lambda settings.
->>>>>>> 0eb52e4f20e05ed1b2de1a626510c234d5e70dbe
 
 ### Requirements
 1. Requirements for `Matlab`
@@ -151,7 +146,7 @@ If you find SphereFace useful in your research, please consider to cite:
 	- SphereFace-20: [Google Drive](https://drive.google.com/open?id=0B_geeR2lTMegb2F6dmlmOXhWaVk)
 
 ### Results
-1. Following the instruction, we go through the entire pipeline for 5 times. The accuracies on LFW are shown below.
+1. Following the instruction, we go through the entire pipeline for 5 times. The accuracies on LFW are shown below. Generally, we report the average but we release the [best one](#models) here.
 
 	Experiment |#1|#2|#3 (released)|#4|#5
 	:---:|:---:|:---:|:---:|:---:|:---:
