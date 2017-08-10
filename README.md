@@ -43,7 +43,7 @@ If you find SphereFace useful in your research, please consider to cite:
 ### Disclaimer
 1. **Backward gradient.**
 	- In this implementation, we did not strictly follow the equations in paper. Instead, we normalize the scale of gradient to 1. It can be interpreted as a varying strategy for learning rate to help converge more stably. Similar idea and intuition also appear in https://arxiv.org/pdf/1707.04822.pdf
-	- More specifically, if the original gradient of ***f*** w.r.t ***x*** can be written as **df/dx = coeff_w \*  w + coeff_x \* x**, we use the normalized version **[df/dx] = (coeff_w \* w + coeff_x \* x) / norm_wx** to perform backward propragation, where norm_wx is **sqrt(coeff_w^2 + coeff_x^2)**. Same operation is also for the gradient of ***f*** w.r.t ***w***.
+	- More specifically, if the original gradient of ***f*** w.r.t ***x*** can be written as **df/dx = coeff_w \*  w + coeff_x \* x**, we use the normalized version **[df/dx] = (coeff_w \* w + coeff_x \* x) / norm_wx** to perform backward propragation, where **norm_wx** is **sqrt(coeff_w^2 + coeff_x^2)**. The same operation is also applied to the gradient of ***f*** w.r.t ***w***.
 	- If you use the original gradient to do the backprop, you could still make it work but may need different lambda settings.
 
 ### Requirements
