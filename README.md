@@ -37,6 +37,21 @@ Our another closely-related previous work in ICML'16 ([more](https://github.com/
 
 Please click the image to watch the Youtube video. For Youku users, click [here](http://t.cn/RCZ0w1c).
 
+Details:
+1. It is a **open-set** face recognition scenario. The video is processed frame by frame, following the same pipeline in this repository.
+2. Gallery set consists of 6 identities. Each main character has only 1 gallery face image. All the detected faces are included in probe set.
+3. There is no overlap between gallery set and training set (CASIA-WebFace).
+4. The scores between each probe face and gallery set are computed by cosine similarity. If the maximal score of a probe face is smaller than a pre-definded threshold, the probe face would be considered as an outlier.
+5. Main characters are labeled by boxes with different colors. (
+![#ff0000](https://placehold.it/15/ff0000/000000?text=+)Rachel,
+![#ffff00](https://placehold.it/15/ffff00/000000?text=+)Monica,
+![#ff80ff](https://placehold.it/15/ff80ff/000000?text=+)Phoebe,
+![#00ffff](https://placehold.it/15/00ffff/000000?text=+)Joey,
+![#0000ff](https://placehold.it/15/0000ff/000000?text=+)Chandler,
+![#00ff00](https://placehold.it/15/00ff00/000000?text=+)Ross)
+
+
+
 ### Contents
 1. [Update](#update)
 2. [Note](#note)
@@ -50,17 +65,22 @@ Please click the image to watch the Youtube video. For Youku users, click [here]
 - July 20, 2017
   * This repository was built.
 - August 9, 2017
-  * Most of the bugs are fixed. SphereFace-20 prototxt file (**`$SPHEREFACE_ROOT/train/code/sphereface_model.prototxt`**) is released. This architecture is exactly the same as the 20-layer CNN reported in the paper. A well-trained model with accuracy **99.30%** on **LFW** is released.
+  * Most of the bugs are fixed. 
+  * SphereFace-20 prototxt file (**`$SPHEREFACE_ROOT/train/code/sphereface_model.prototxt`**) is released. This architecture is exactly the same as the 20-layer CNN reported in the paper. 
+  * A well-trained model with accuracy **99.30%** on **LFW** is released.
 - August 16, 2017
   * A video demo is released.
-- To be updated:
-  * Detected facial landmarks, training image list, training log and extracted features will be released soon.
+  * Training log and extracted features are released.
 
 ### Note
 1. **Backward gradient.**
 	- In this implementation, we did not strictly follow the equations in paper. Instead, we normalize the scale of gradient to 1. It can be interpreted as a varying strategy for learning rate to help converge more stably. Similar idea and intuition also appear in https://arxiv.org/pdf/1707.04822.pdf
 	- More specifically, if the original gradient of ***f*** w.r.t ***x*** can be written as **df/dx = coeff_w \*  w + coeff_x \* x**, we use the normalized version **[df/dx] = (coeff_w \* w + coeff_x \* x) / norm_wx** to perform backward propragation, where **norm_wx** is **sqrt(coeff_w^2 + coeff_x^2)**. The same operation is also applied to the gradient of ***f*** w.r.t ***w***.
 	- If you use the original gradient to do the backprop, you could still make it work but may need different lambda settings.
+
+2. **Lambda.**
+	- Please refer to our previous [explanation](https://github.com/wy1iu/LargeMargin_Softmax_Loss#notes).
+
 
 ### Requirements
 1. Requirements for `Matlab`
@@ -162,11 +182,17 @@ Please click the image to watch the Youtube video. For Youku users, click [here]
 	- SphereFace-20: [Google Drive](https://drive.google.com/open?id=0B_geeR2lTMegb2F6dmlmOXhWaVk) | [Baidu](http://pan.baidu.com/s/1skLAPtz)
 	
 ### Results
-1. Following the instruction, we go through the entire pipeline for 5 times. The accuracies on LFW are shown below. Generally, we report the average but we release the [best one](#models) here.
+1. Following the instruction, we go through the entire pipeline for 5 times. The accuracies on LFW are shown below. Generally, we report the average but we release the [model-3](#models) here.
 
 	Experiment |#1|#2|#3 (released)|#4|#5
 	:---:|:---:|:---:|:---:|:---:|:---:
 	ACC|99.24%|99.20%|**99.30%**|99.27%|99.13%
+
+2. Other intermediate results:
+    - LFW features: [Google Drive](https://drive.google.com/open?id=0B_geeR2lTMegenU0cGJYZmlRUlU)
+    - Training log: [Google Drive](https://drive.google.com/open?id=0B_geeR2lTMegcWkxdVV4X1FOaFU)
+
+
 
 ### Contact
 
