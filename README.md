@@ -26,11 +26,11 @@ If you find SphereFace useful in your research, please consider to cite:
 ### Video Demo
 [![SphereFace Demo](https://img.youtube.com/vi/P6jEzzwoYWs/0.jpg)](https://www.youtube.com/watch?v=P6jEzzwoYWs)
 
-Please click the image to watch the Youtube video. For Youku user, click [here](http://t.cn/RCZ0w1c)
+Please click the image to watch the Youtube video. For Youku users, click [here](http://t.cn/RCZ0w1c).
 
 ### Contents
 1. [Update](#update)
-2. [Disclaimer](#disclaimer)
+2. [Note](#note)
 3. [Requirements](#requirements)
 4. [Installation](#installation)
 5. [Usage](#usage)
