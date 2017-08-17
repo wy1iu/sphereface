@@ -14,13 +14,22 @@ SphereFace is released under the MIT License (refer to the LICENSE file for deta
 
 ### Citing SphereFace
 
-If you find SphereFace useful in your research, please consider to cite:
+If you find **SphereFace** useful in your research, please consider to cite:
 
     @inproceedings{liu2017sphereface,
-        author = {Weiyang Liu, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj, and Le Song},
+        author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Li, Ming and Raj, Bhiksha and Song, Le},
         title = {SphereFace: Deep Hypersphere Embedding for Face Recognition},
         booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
         Year = {2017}
+    }
+
+Our another closely related work in ICML'16:
+
+    @inproceedings{liu2016large,
+        author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Yang, Meng},
+        title = {Large-Margin Softmax Loss for Convolutional Neural Networks},
+        booktitle = {Proceedings of The 33rd International Conference on Machine Learning},
+        Year = {2016}
     }
 
 ### Video Demo
