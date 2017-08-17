@@ -105,10 +105,10 @@ Details:
 
 ### Usage
 
-*After successfully completing [installation](#installation)*, you'll be ready to run all the following experiments.
+*After successfully completing the [installation](#installation)*, you are ready to run all the following experiments.
 
 #### Part 1: Preprocessing
-**Note 1:** In this part, we assume you are in the directory **`$SPHEREFACE_ROOT/preprocess/`**
+**Note:** In this part, we assume you are in the directory **`$SPHEREFACE_ROOT/preprocess/`**
 1. Download the training set (`CASIA-WebFace`) and test set (`LFW`) and place them in **`data/`**.
 
 	```Shell
@@ -134,7 +134,7 @@ Details:
     This will create two folders (**`CASIA-WebFace-112X96/`** and **`lfw-112X96/`**) in the directory of **`result/`**, containing the aligned face images.
 
 #### Part 2: Train
-**Note 2:** In this part, we assume you are in the directory **`$SPHEREFACE_ROOT/train/`**
+**Note:** In this part, we assume you are in the directory **`$SPHEREFACE_ROOT/train/`**
 
 1. Get a list of training images and labels.
 
@@ -153,7 +153,7 @@ Details:
     After training, a model `sphereface_model_iter_28000.caffemodel` and a corresponding log file `sphereface_train.log` are placed in the directory of `result/sphereface/`.
 
 #### Part 3: Test
-**Note 3:** In this part, we assume you are in the directory **`$SPHEREFACE_ROOT/test/`**
+**Note:** In this part, we assume you are in the directory **`$SPHEREFACE_ROOT/test/`**
 
 1. Get the pair list of LFW ([view 2](http://vis-www.cs.umass.edu/lfw/#views)).
 
