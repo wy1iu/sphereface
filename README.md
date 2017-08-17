@@ -23,6 +23,9 @@ If you find SphereFace useful in your research, please consider to cite:
         Year = {2017}
     }
 
+### Video Demo
+[![SphereFace Demo](https://img.youtube.com/vi/P6jEzzwoYWs/0.jpg)](https://www.youtube.com/watch?v=P6jEzzwoYWs)
+
 ### Contents
 1. [Update](#update)
 2. [Disclaimer](#disclaimer)
@@ -37,10 +40,12 @@ If you find SphereFace useful in your research, please consider to cite:
   * This repository was built.
 - August 9, 2017
   * Most of the bugs are fixed. SphereFace-20 prototxt file (**`$SPHEREFACE_ROOT/train/code/sphereface_model.prototxt`**) is released. This architecture is exactly the same as the 20-layer CNN reported in the paper. A well-trained model with accuracy **99.30%** on **LFW** is released.
+- August 16, 2017
+  * A video demo is released.
 - To be updated:
   * Detected facial landmarks, training image list, training log and extracted features will be released soon.
 
-### Disclaimer
+### Note
 1. **Backward gradient.**
 	- In this implementation, we did not strictly follow the equations in paper. Instead, we normalize the scale of gradient to 1. It can be interpreted as a varying strategy for learning rate to help converge more stably. Similar idea and intuition also appear in https://arxiv.org/pdf/1707.04822.pdf
 	- More specifically, if the original gradient of ***f*** w.r.t ***x*** can be written as **df/dx = coeff_w \*  w + coeff_x \* x**, we use the normalized version **[df/dx] = (coeff_w \* w + coeff_x \* x) / norm_wx** to perform backward propragation, where **norm_wx** is **sqrt(coeff_w^2 + coeff_x^2)**. The same operation is also applied to the gradient of ***f*** w.r.t ***w***.
