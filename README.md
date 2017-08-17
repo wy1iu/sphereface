@@ -38,7 +38,7 @@ Our another closely-related previous work in ICML'16 ([more](https://github.com/
 Please click the image to watch the Youtube video. For Youku users, click [here](http://t.cn/RCZ0w1c).
 
 Details:
-1. It is a **open-set** face recognition scenario. The video is processed frame by frame, following the same pipeline in this repository.
+1. It is an **open-set** face recognition scenario. The video is processed frame by frame, following the same pipeline in this repository.
 2. Gallery set consists of 6 identities. Each main character has only 1 gallery face image. All the detected faces are included in probe set.
 3. There is no overlap between gallery set and training set (CASIA-WebFace).
 4. The scores between each probe face and gallery set are computed by cosine similarity. If the maximal score of a probe face is smaller than a pre-definded threshold, the probe face would be considered as an outlier.
