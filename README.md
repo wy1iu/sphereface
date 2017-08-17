@@ -23,7 +23,7 @@ If you find **SphereFace** useful in your research, please consider to cite:
         Year = {2017}
     }
 
-Our another closely related work in ICML'16:
+Our another closely-related previous work in ICML'16 ([more](https://github.com/wy1iu/LargeMargin_Softmax_Loss)):
 
     @inproceedings{liu2016large,
         author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Yang, Meng},
