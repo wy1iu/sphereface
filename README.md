@@ -8,6 +8,8 @@ The repository contains the entire pipeline (including all the preprossings) for
 
 SphereFace is a recently proposed face recognition method. It was initially described in an [arXiv technical report](https://arxiv.org/pdf/1704.08063.pdf) and then published in [CVPR 2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Liu_SphereFace_Deep_Hypersphere_CVPR_2017_paper.pdf). To facilitate the face recognition research, we give an example of training on [CAISA-WebFace](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) and testing on [LFW](http://vis-www.cs.umass.edu/lfw/) using the **20-layer CNN architecture** described in the paper (i.e. SphereFace-20). 
 
+SphereFace still holds [the verification accuracy record in MegaFace Challenge](http://megaface.cs.washington.edu/results/facescrubresults.html#verification) under the small training set protocol.
+
 ### License
 
 SphereFace is released under the MIT License (refer to the LICENSE file for details).
