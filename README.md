@@ -64,15 +64,15 @@ Details:
 7. [Results](#results)
 
 ### Update
-- July 20, 2017
-  * This repository was built.
+- August 16, 2017
+  * A video demo is released.
+  * Training log and extracted features are released.
 - August 9, 2017
   * Most of the bugs are fixed. 
   * SphereFace-20 prototxt file (**`$SPHEREFACE_ROOT/train/code/sphereface_model.prototxt`**) is released. This architecture is exactly the same as the 20-layer CNN reported in the paper. 
   * A well-trained model with accuracy **99.30%** on **LFW** is released.
-- August 16, 2017
-  * A video demo is released.
-  * Training log and extracted features are released.
+- July 20, 2017
+  * This repository was built.
 
 ### Note
 1. **Backward gradient.**
