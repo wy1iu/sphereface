@@ -82,7 +82,7 @@ Details:
 	- If you use the original gradient to do the backprop, you could still make it work but may need different lambda settings, iteration number and learning rate decay strategy. 
 
 2. **Lambda.**
-	- Please refer to our previous [explanation](https://github.com/wy1iu/LargeMargin_Softmax_Loss#notes).
+	- Please refer to our previous [explanation](https://github.com/wy1iu/LargeMargin_Softmax_Loss#notes) (notes for training).
 
 
 ### Requirements
