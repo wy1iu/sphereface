@@ -35,7 +35,7 @@ weights = '../train/result/sphereface_model_iter_28000.caffemodel';
 net     = caffe.Net(model, weights, 'test');
 net.save('result/sphereface_model.caffemodel');
 
-%% compute features and scores
+%% compute features
 pairs = parseList('data/pairs.txt', fullfile(pwd, 'data/lfw-112X96'));
 for i = 1:length(pairs)
     fprintf('extracting deep features from the %dth face pair...\n', i);
