@@ -77,7 +77,8 @@ class Spherenet(object):
                                    gamma=0.12,
                                    power=1,
                                    lambda_min=5,
-                                   iteration=0)
+                                   iteration=0,
+                                   top='lambda')
 
         loss = L.SoftmaxWithLoss(fc6, label)
         return to_proto(loss)
@@ -90,7 +91,7 @@ def make_net():
         block_nums = [1, 2, 4, 1]
         print(str(model.make_net('data/CASIA-WebFace-112X96.txt', block_nums)), file=f)
 
-    # make spherenet32
+    # make spherenet36
     with open('spherenet_model36.prototxt', 'w') as f:
         block_nums = [2, 4, 8, 2]
         print(str(model.make_net('data/CASIA-WebFace-112X96.txt', block_nums)), file=f)
