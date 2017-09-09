@@ -12,7 +12,9 @@ class Spherenet(object):
     def __init__(self):
         pass
 
-    def conv_prelu(self, bottom, num_out, kernel_size=3, stride=1, pad=1, is_bias=False, wf=gaussian_constant):
+    def conv_prelu(self, bottom, num_out, kernel_size=3, stride=1, pad=1, is_bias=False, 
+        wf=gaussian_constant):
+    
         if is_bias:
             learn_param = [dict(lr_mult=1, decay_mult=1), dict(lr_mult=2, decay_mult=0)]
         else:
@@ -89,7 +91,7 @@ def make_net():
         print(str(model.make_net('data/CASIA-WebFace-112X96.txt', block_nums)), file=f)
 
     # make spherenet32
-    with open('spherenet_model32.prototxt', 'w') as f:
+    with open('spherenet_model36.prototxt', 'w') as f:
         block_nums = [2, 4, 8, 2]
         print(str(model.make_net('data/CASIA-WebFace-112X96.txt', block_nums)), file=f)
 
