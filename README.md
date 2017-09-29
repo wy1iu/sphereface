@@ -10,6 +10,9 @@ SphereFace is a recently proposed face recognition method. It was initially desc
 
 SphereFace achieves the state-of-the-art verification performance (previously No.1) in [MegaFace Challenge](http://megaface.cs.washington.edu/results/facescrub.html#3) under the small training set protocol.
 
+### 3rd-Party Implementation
+- [PyTorch Implementation](https://github.com/clcarwin/sphereface_pytorch) by [carwin](https://github.com/clcarwin)
+
 ### License
 
 SphereFace is released under the MIT License (refer to the LICENSE file for details).
