@@ -193,8 +193,9 @@ Details:
 
 
 ### Third-party re-implementation
-- PyTorch: [code](https://github.com/clcarwin/sphereface_pytorch) by [carwin](https://github.com/clcarwin)
-- System: [A cool face demo system](https://github.com/tpys/face-everthing) using SphereFace by [tpys](https://github.com/tpys)
+- PyTorch: [code](https://github.com/clcarwin/sphereface_pytorch) by [carwin](https://github.com/clcarwin).
+- Caffe2: [code](https://github.com/tpys/face-recognition-caffe2) by [tpys](https://github.com/tpys).
+- System: [A cool face demo system](https://github.com/tpys/face-everthing) using SphereFace by [tpys](https://github.com/tpys).
 
 ### Contact
 
