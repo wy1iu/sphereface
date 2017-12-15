@@ -32,21 +32,23 @@ SphereFace achieves the state-of-the-art verification performance (previously No
 
 If you find **SphereFace** useful in your research, please consider to cite:
 
-    @inproceedings{liu2017sphereface,
-        author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Li, Ming and Raj, Bhiksha and Song, Le},
-        title = {SphereFace: Deep Hypersphere Embedding for Face Recognition},
-        booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition},
-        Year = {2017}
-    }
+	@InProceedings{Liu_2017_CVPR,
+	  title = {SphereFace: Deep Hypersphere Embedding for Face Recognition},
+	  author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Li, Ming and Raj, Bhiksha and Song, Le},
+	  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+	  year = {2017},
+	  month = {July}
+	}
 
 Our another closely-related previous work in ICML'16 ([more](https://github.com/wy1iu/LargeMargin_Softmax_Loss)):
 
-    @inproceedings{liu2016large,
-        author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Yang, Meng},
-        title = {Large-Margin Softmax Loss for Convolutional Neural Networks},
-        booktitle = {Proceedings of The 33rd International Conference on Machine Learning},
-        Year = {2016}
-    }
+	@InProceedings{Liu_2016_ICML,
+	  title = {Large-Margin Softmax Loss for Convolutional Neural Networks},
+	  author = {Weiyang Liu and Yandong Wen and Zhiding Yu and Meng Yang},
+	  booktitle = {Proceedings of The 33rd International Conference on Machine Learning},
+	  year = {2016},
+	  month = {Jun}
+	}
 
 
 ### Requirements
