@@ -35,7 +35,7 @@ If you find **SphereFace** useful in your research, please consider to cite:
 	@InProceedings{Liu_2017_CVPR,
 	  title = {SphereFace: Deep Hypersphere Embedding for Face Recognition},
 	  author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Li, Ming and Raj, Bhiksha and Song, Le},
-	  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+	  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
 	  year = {2017},
 	  month = {July}
 	}
@@ -196,7 +196,9 @@ Details:
 
 ### Third-party re-implementation
 - PyTorch: [code](https://github.com/clcarwin/sphereface_pytorch) by [carwin](https://github.com/clcarwin).
+- TensorFlow: [code](https://github.com/pppoe/tensorflow-sphereface-asoftmax) by [pppoe](https://github.com/pppoe).
 - Caffe2: [code](https://github.com/tpys/face-recognition-caffe2) by [tpys](https://github.com/tpys).
+- Trained on MS-1M: [code](https://github.com/KaleidoZhouYN/Sphereface-Ms-celeb-1M) by [KaleidoZhouYN](https://github.com/KaleidoZhouYN).
 - System: [A cool face demo system](https://github.com/tpys/face-everthing) using SphereFace by [tpys](https://github.com/tpys).
 
 ### Contact
