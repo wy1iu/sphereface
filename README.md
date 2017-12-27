@@ -36,18 +36,16 @@ If you find **SphereFace** useful in your research, please consider to cite:
 	  title = {SphereFace: Deep Hypersphere Embedding for Face Recognition},
 	  author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Li, Ming and Raj, Bhiksha and Song, Le},
 	  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-	  year = {2017},
-	  month = {July}
+	  year = {2017}
 	}
 
 Our another closely-related previous work in ICML'16 ([more](https://github.com/wy1iu/LargeMargin_Softmax_Loss)):
 
 	@InProceedings{Liu_2016_ICML,
 	  title = {Large-Margin Softmax Loss for Convolutional Neural Networks},
-	  author = {Weiyang Liu and Yandong Wen and Zhiding Yu and Meng Yang},
+	  author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Yang, Meng},
 	  booktitle = {Proceedings of The 33rd International Conference on Machine Learning},
-	  year = {2016},
-	  month = {Jun}
+	  year = {2016}
 	}
 
 
