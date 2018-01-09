@@ -37,7 +37,7 @@ If you find **SphereFace** useful in your research, please consider to cite:
 	@InProceedings{Liu_2017_CVPR,
 	  title = {SphereFace: Deep Hypersphere Embedding for Face Recognition},
 	  author = {Liu, Weiyang and Wen, Yandong and Yu, Zhiding and Li, Ming and Raj, Bhiksha and Song, Le},
-	  booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+	  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
 	  year = {2017}
 	}
 
