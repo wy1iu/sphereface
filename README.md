@@ -198,6 +198,7 @@ Details:
 - PyTorch: [code](https://github.com/clcarwin/sphereface_pytorch) by [clcarwin](https://github.com/clcarwin).
 - TensorFlow: [code](https://github.com/pppoe/tensorflow-sphereface-asoftmax) by [pppoe](https://github.com/pppoe).
 - TensorFlow: [code](https://github.com/hujun100/tensorflow-sphereface) by [hujun100](https://github.com/hujun100).
+- MXNet: [code](https://github.com/HaoLiuHust/sphereface_mxnet_gluon) by [HaoLiuHust](https://github.com/HaoLiuHust).
 - Caffe2: [code](https://github.com/tpys/face-recognition-caffe2) by [tpys](https://github.com/tpys).
 - Trained on MS-1M: [code](https://github.com/KaleidoZhouYN/Sphereface-Ms-celeb-1M) by [KaleidoZhouYN](https://github.com/KaleidoZhouYN).
 - System: [A cool face demo system](https://github.com/tpys/face-everthing) using SphereFace by [tpys](https://github.com/tpys).
