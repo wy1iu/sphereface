@@ -217,8 +217,6 @@ Details:
 
 Disclaimer: Some of these methods may not necessarily be inspired by us, but we still list them due to its relevance and excellence.
 
-https://arxiv.org/abs/1801.07698
-
 ### Contact
 
   [Weiyang Liu](https://wyliu.com) and [Yandong Wen](https://ydwen.github.io)
