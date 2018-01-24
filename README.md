@@ -215,7 +215,7 @@ Details:
 - COCO loss: [paper](https://arxiv.org/pdf/1710.00870.pdf) and [code](https://github.com/sciencefans/coco_loss)
 - Angular Triplet Loss: [code](https://github.com/KaleidoZhouYN/Angular-Triplet-Loss)
 
-Disclaimer: Some of these methods may not necessarily inspired by us, but we still list them due to its relevance and excellence.
+Disclaimer: Some of these methods may not necessarily be inspired by us, but we still list them due to its relevance and excellence.
 
 https://arxiv.org/abs/1801.07698
 
