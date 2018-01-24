@@ -17,7 +17,7 @@ SphereFace is released under the MIT License (refer to the LICENSE file for deta
 0. [Video Demo](#video-demo)
 0. [Note](#note)
 0. [Third-party re-implementation](#third-party-re-implementation)
-0. [Resources for angular face represnetation learning](#resources-for-angular-face-represnetation-learning)
+0. [Resources for angular face represnetation learning](#resources-for-angular-margin-learning)
 
 
 ### Introduction
@@ -205,7 +205,7 @@ Details:
 - System: [A cool face demo system](https://github.com/tpys/face-everthing) using SphereFace by [tpys](https://github.com/tpys).
 - Third-party pretrained models: [code](https://github.com/goodluckcwl/Sphereface-model) by [goodluckcwl](https://github.com/goodluckcwl)
 
-### Resources for angular face represnetation learning
+### Resources for angular margin learning
 
 [L-Softmax loss](https://github.com/wy1iu/LargeMargin_Softmax_Loss) and [SphereFace](https://github.com/wy1iu/sphereface) present a promising framework for angular representation learning, which is shown very effective in deep face recognition. We are super excited that our works has inspired many well-performing methods (and loss functions). We list a few of them for your potential reference:
 
