@@ -17,7 +17,7 @@ SphereFace is released under the MIT License (refer to the LICENSE file for deta
 0. [Video Demo](#video-demo)
 0. [Note](#note)
 0. [Third-party re-implementation](#third-party-re-implementation)
-0. [Resources for angular face represnetation learning](#resources)
+0. [Resources for angular face represnetation learning](#resources-for-angular-face-represnetation-learning)
 
 
 ### Introduction
