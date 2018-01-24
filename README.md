@@ -17,6 +17,7 @@ SphereFace is released under the MIT License (refer to the LICENSE file for deta
 0. [Video Demo](#video-demo)
 0. [Note](#note)
 0. [Third-party re-implementation](#third-party-re-implementation)
+0. [Resources for angular face represnetation learning](#resources)
 
 
 ### Introduction
@@ -203,6 +204,20 @@ Details:
 - Trained on MS-1M: [code](https://github.com/KaleidoZhouYN/Sphereface-Ms-celeb-1M) by [KaleidoZhouYN](https://github.com/KaleidoZhouYN).
 - System: [A cool face demo system](https://github.com/tpys/face-everthing) using SphereFace by [tpys](https://github.com/tpys).
 - Third-party pretrained models: [code](https://github.com/goodluckcwl/Sphereface-model) by [goodluckcwl](https://github.com/goodluckcwl)
+
+### Resources for angular face represnetation learning
+
+[L-Softmax loss](https://github.com/wy1iu/LargeMargin_Softmax_Loss) and [SphereFace](https://github.com/wy1iu/sphereface) present a promising framework for angular representation learning, which is shown very effective in deep face recognition. We are super excited that our works has inspired many well-performing methods (and loss functions). We list a few of them for your potential reference:
+
+- Additive margin softmax: [paper](https://arxiv.org/abs/1801.05599) and [code](https://github.com/happynear/AMSoftmax)
+- ArcFace/InsightFace: [paper](https://arxiv.org/abs/1801.07698) and [code](https://github.com/deepinsight/insightface)
+- NormFace: [paper](https://arxiv.org/abs/1704.06369) and [code](https://github.com/happynear/NormFace)
+- COCO loss: [paper](https://arxiv.org/pdf/1710.00870.pdf) and [code](https://github.com/sciencefans/coco_loss)
+- Angular Triplet Loss: [code](https://github.com/KaleidoZhouYN/Angular-Triplet-Loss)
+
+Disclaimer: Some of these methods may not necessarily inspired by us, but we still list them due to its relevance and excellence.
+
+https://arxiv.org/abs/1801.07698
 
 ### Contact
 
