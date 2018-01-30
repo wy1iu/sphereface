@@ -211,8 +211,11 @@ Details:
 [L-Softmax loss](https://github.com/wy1iu/LargeMargin_Softmax_Loss) and [SphereFace](https://github.com/wy1iu/sphereface) present a promising framework for angular representation learning, which is shown very effective in deep face recognition. We are super excited that our works has inspired many well-performing methods (and loss functions). We list a few of them for your potential reference:
 
 - Additive margin softmax: [paper](https://arxiv.org/abs/1801.05599) and [code](https://github.com/happynear/AMSoftmax)
+- CosFace: [paper](https://arxiv.org/abs/1801.09414)
 - ArcFace/InsightFace: [paper](https://arxiv.org/abs/1801.07698) and [code](https://github.com/deepinsight/insightface)
 - NormFace: [paper](https://arxiv.org/abs/1704.06369) and [code](https://github.com/happynear/NormFace)
+- L2-Softmax: [paper](https://arxiv.org/abs/1703.09507)
+- von Mises-Fisher Mixture Model: [paper](https://arxiv.org/abs/1706.04264)
 - COCO loss: [paper](https://arxiv.org/pdf/1710.00870.pdf) and [code](https://github.com/sciencefans/coco_loss)
 - Angular Triplet Loss: [code](https://github.com/KaleidoZhouYN/Angular-Triplet-Loss)
 
