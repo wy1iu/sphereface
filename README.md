@@ -8,7 +8,15 @@ SphereFace is released under the MIT License (refer to the LICENSE file for deta
 
 ### Update
 
-- **2018.1.27**: We updated the appendix of our SphereFace paper with useful experiments and analysis. Take a look [here](http://wyliu.com/papers/LiuCVPR17v3.pdf).
+- **2018.1.27**: We updated the appendix of our SphereFace paper with useful experiments and analysis. Take a look [here](http://wyliu.com/papers/LiuCVPR17v3.pdf). The content contains:
+	- The intuition of removing the last ReLU;
+	- Why do we want to normalize the weights other than because we need more geometric interpretation?
+	- Empirical experiment of zeroing out the biases;
+	- More 2D visualization of A-Softmax loss on MNIST;
+	- **Angular Fisher score** for evaluating the angular feature discriminativeness, which is a new and straightforward evluation metric other than the final accuracy.
+	- Experiments of SphereFace on MegaFace with different convolutional layers;
+	- The annealing optimization strategy for A-Softmax loss;
+	-  Details of the 3-patch ensemble strategy in MegaFace challenge;
 
 - **2018.1.20**: We updated some resources to summarize the current advances in angular margin learning. Take a look [here](#resources-for-angular-margin-learning).
 
