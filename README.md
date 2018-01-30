@@ -7,8 +7,10 @@ By Weiyang Liu, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj and Le Song
 SphereFace is released under the MIT License (refer to the LICENSE file for details).
 
 ### Update
-	- **2018.1.27**: We update the appendix of our SphereFace paper with some useful experiments and analysis. Take a look [here](http://wyliu.com/papers/LiuCVPR17v3.pdf).
-	- **2018.1.20**: We update some resources to summarize the current advances in angular margin learning. Take a look [here](#resources-for-angular-margin-learning).
+
+- **2018.1.27**: We update the appendix of our SphereFace paper with some useful experiments and analysis. Take a look [here](http://wyliu.com/papers/LiuCVPR17v3.pdf).
+
+- **2018.1.20**: We update some resources to summarize the current advances in angular margin learning. Take a look [here](#resources-for-angular-margin-learning).
 
 ### Contents
 0. [Introduction](#introduction)
