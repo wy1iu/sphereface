@@ -8,7 +8,7 @@ SphereFace is released under the MIT License (refer to the LICENSE file for deta
 
 ### Update
 
-- **2018.1.27**: We updated the appendix of our SphereFace paper with some useful experiments and analysis. Take a look [here](http://wyliu.com/papers/LiuCVPR17v3.pdf).
+- **2018.1.27**: We updated the appendix of our SphereFace paper with useful experiments and analysis. Take a look [here](http://wyliu.com/papers/LiuCVPR17v3.pdf).
 
 - **2018.1.20**: We updated some resources to summarize the current advances in angular margin learning. Take a look [here](#resources-for-angular-margin-learning).
 
