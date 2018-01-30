@@ -195,7 +195,7 @@ Details:
 	- Please refer to our previous [note and explanation](https://github.com/wy1iu/LargeMargin_Softmax_Loss#notes-for-training).
 	
 3. **According to recent advances, using feature normalization with a tunable scaling parameter $s$ can significantly improve the performance of SphereFace on MegaFace challenge**
-        - This is supported by the experiments done by [CosFace](https://arxiv.org/abs/1801.09414). Similar idea also appears in [additive margin softmax](https://arxiv.org/abs/1801.05599).
+	- This is supported by the experiments done by [CosFace](https://arxiv.org/abs/1801.09414). Similar idea also appears in [additive margin softmax](https://arxiv.org/abs/1801.05599).
 
 
 ### Third-party re-implementation
