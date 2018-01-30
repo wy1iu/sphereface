@@ -6,6 +6,10 @@ By Weiyang Liu, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj and Le Song
 
 SphereFace is released under the MIT License (refer to the LICENSE file for details).
 
+### Update
+	- **2018.1.27**: We update the appendix of our SphereFace paper with some useful experiments and analysis. Take a look [here](http://wyliu.com/papers/LiuCVPR17v3.pdf).
+	- **2018.1.20**: We update some resources to summarize the current advances in angular margin learning. Take a look [here](#resources-for-angular-margin-learning).
+
 ### Contents
 0. [Introduction](#introduction)
 0. [Citation](#citation)
@@ -194,7 +198,7 @@ Details:
 2. **Lambda** and **Note for training (When the loss becomes 87)**
 	- Please refer to our previous [note and explanation](https://github.com/wy1iu/LargeMargin_Softmax_Loss#notes-for-training).
 	
-3. **According to recent advances, using feature normalization with a tunable scaling parameter $s$ can significantly improve the performance of SphereFace on MegaFace challenge**
+3. **According to recent advances, using feature normalization with a tunable scaling parameter s can significantly improve the performance of SphereFace on MegaFace challenge**
 	- This is supported by the experiments done by [CosFace](https://arxiv.org/abs/1801.09414). Similar idea also appears in [additive margin softmax](https://arxiv.org/abs/1801.05599).
 
 
