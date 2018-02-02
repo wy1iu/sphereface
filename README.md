@@ -7,7 +7,7 @@ By Weiyang Liu, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj and Le Song
 SphereFace is released under the MIT License (refer to the LICENSE file for details).
 
 ### Update
-
+- **2018.2.1**: The prototxt files for SphereFace-64 is released.
 - **2018.1.27**: We updated the appendix of our SphereFace paper with useful experiments and analysis. Take a look [here](http://wyliu.com/papers/LiuCVPR17v3.pdf). The content contains:
 	- The intuition of removing the last ReLU;
 	- Why do we want to normalize the weights other than because we need more geometric interpretation?
