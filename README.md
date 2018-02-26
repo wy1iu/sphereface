@@ -132,7 +132,7 @@ Our another closely-related previous work in ICML'16 ([more](https://github.com/
 2. Train the sphereface model.
 
 	```Shell
-	./code/sphereface/sphereface_train.sh 0,1
+	./code/sphereface_train.sh 0,1
 	```
     After training, a model `sphereface_model_iter_28000.caffemodel` and a corresponding log file `sphereface_train.log` are placed in the directory of `result/sphereface/`.
 
