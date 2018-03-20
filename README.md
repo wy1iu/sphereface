@@ -211,6 +211,13 @@ Details:
 3. **According to recent advances, using feature normalization with a tunable scaling parameter s can significantly improve the performance of SphereFace on MegaFace challenge**
 	- This is supported by the experiments done by [CosFace](https://arxiv.org/abs/1801.09414). Similar idea also appears in [additive margin softmax](https://arxiv.org/abs/1801.05599).
 
+4. **Difficulties in convergence**
+        - When you encounter difficulties in convergence (it may appear if you use *SphereFace* in another dataset), usually there are a few easy ways to address it.
+	- First, try to use large mini-batch size. 
+	- Second, try to use PReLU instead of ReLU. 
+	- Third, increase the width and depth of our network. 
+	- Last, try to use better initialization. For example, use the pretrained model from the original softmax loss (it is also equivalent to finetuning).
+
 
 ### Third-party re-implementation
 - PyTorch: [code](https://github.com/clcarwin/sphereface_pytorch) by [clcarwin](https://github.com/clcarwin).
