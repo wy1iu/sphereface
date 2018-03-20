@@ -216,7 +216,8 @@ Details:
 	- First, try to use large mini-batch size. 
 	- Second, try to use PReLU instead of ReLU. 
 	- Third, increase the width and depth of our network. 
-	- Last, try to use better initialization. For example, use the pretrained model from the original softmax loss (it is also equivalent to finetuning).
+	- Fourth, try to use better initialization. For example, use the pretrained model from the original softmax loss (it is also equivalent to finetuning).
+	- Last and the most effective thing you could try is to change the hyper-parameters for lambda_min, lambda and its decay speed.
 
 
 ### Third-party re-implementation
