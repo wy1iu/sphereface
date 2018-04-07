@@ -1,4 +1,4 @@
-# *SphereFace* : Deep Hypersphere Embedding for Face Recognition
+# *SphereFace*: Deep Hypersphere Embedding for Face Recognition
 
 By Weiyang Liu, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj and Le Song
 
