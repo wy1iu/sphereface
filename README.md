@@ -225,16 +225,17 @@ Details:
 - PyTorch: [code](https://github.com/clcarwin/sphereface_pytorch) by [clcarwin](https://github.com/clcarwin).
 - TensorFlow: [code](https://github.com/pppoe/tensorflow-sphereface-asoftmax) by [pppoe](https://github.com/pppoe).
 - TensorFlow: [code](https://github.com/hujun100/tensorflow-sphereface) by [hujun100](https://github.com/hujun100).
-- TensorFlow: [code](https://github.com/andrewhuman/sphereloss_tensorflow) by [andrewhuman](https://github.com/andrewhuman)
-- MXNet: [code](https://github.com/deepinsight/insightface) by [deepinsight](https://github.com/deepinsight) (by setting loss-type=1: SphereFace)
+- TensorFlow: [code](https://github.com/HiKapok/tf.extra_losses) by [HiKapok](https://github.com/HiKapok).
+- TensorFlow: [code](https://github.com/andrewhuman/sphereloss_tensorflow) by [andrewhuman](https://github.com/andrewhuman).
+- MXNet: [code](https://github.com/deepinsight/insightface) by [deepinsight](https://github.com/deepinsight) (by setting loss-type=1: SphereFace).
 - Caffe2: [code](https://github.com/tpys/face-recognition-caffe2) by [tpys](https://github.com/tpys).
 - Trained on MS-1M: [code](https://github.com/KaleidoZhouYN/Sphereface-Ms-celeb-1M) by [KaleidoZhouYN](https://github.com/KaleidoZhouYN).
 - System: [A cool face demo system](https://github.com/tpys/face-everthing) using SphereFace by [tpys](https://github.com/tpys).
-- Third-party pretrained models: [code](https://github.com/goodluckcwl/Sphereface-model) by [goodluckcwl](https://github.com/goodluckcwl)
+- Third-party pretrained models: [code](https://github.com/goodluckcwl/Sphereface-model) by [goodluckcwl](https://github.com/goodluckcwl).
 
 ### Resources for angular margin learning
 
-[L-Softmax loss](https://github.com/wy1iu/LargeMargin_Softmax_Loss) and [SphereFace](https://github.com/wy1iu/sphereface) present a promising framework for angular representation learning, which is shown very effective in deep face recognition. We are super excited that our works has inspired many well-performing methods (and loss functions). We list a few of them for your potential reference:
+[L-Softmax loss](https://github.com/wy1iu/LargeMargin_Softmax_Loss) and [SphereFace](https://github.com/wy1iu/sphereface) present a promising framework for angular representation learning, which is shown very effective in deep face recognition. We are super excited that our works has inspired many well-performing methods (and loss functions). We list a few of them for your potential reference (not very up-to-date):
 
 - Additive margin softmax: [paper](https://arxiv.org/abs/1801.05599) and [code](https://github.com/happynear/AMSoftmax)
 - CosFace: [paper](https://arxiv.org/abs/1801.09414)
