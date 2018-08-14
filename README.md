@@ -7,6 +7,7 @@ By Weiyang Liu, Yandong Wen, Zhiding Yu, Ming Li, Bhiksha Raj and Le Song
 SphereFace is released under the MIT License (refer to the LICENSE file for details).
 
 ### Update
+- **2018.8.14**: We recommand an interesting ECCV 2018 paper that comprehensively evaluates SphereFace (A-Softmax) on currently prevailing face datasets and their proposed noise-controlled IMDb-Face dataset. Interested users can try to train SphereFace on their IMDb-Face dataset. Take a look [here](https://arxiv.org/pdf/1807.11649.pdf).
 - **2018.5.23**: A new *SphereFace+* that explicitly enhances the inter-class separability has been introduced in our technical report. Check it out [here](https://arxiv.org/abs/1805.09298). Code will be released soon.
 - **2018.2.1**: As requested, the prototxt files for SphereFace-64 are released.
 - **2018.1.27**: We updated the appendix of our SphereFace paper with useful experiments and analysis. Take a look [here](http://wyliu.com/papers/LiuCVPR17v3.pdf). The content contains:
