@@ -225,6 +225,7 @@ Details:
 
 ### Third-party re-implementation
 - PyTorch: [code](https://github.com/clcarwin/sphereface_pytorch) by [clcarwin](https://github.com/clcarwin).
+- PyTorch (with awesome animations): [code](https://github.com/YunYang1994/SphereFace) by [YunYang1994](https://github.com/YunYang1994).
 - TensorFlow: [code](https://github.com/pppoe/tensorflow-sphereface-asoftmax) by [pppoe](https://github.com/pppoe).
 - TensorFlow: [code](https://github.com/hujun100/tensorflow-sphereface) by [hujun100](https://github.com/hujun100).
 - TensorFlow: [code](https://github.com/HiKapok/tf.extra_losses) by [HiKapok](https://github.com/HiKapok).
