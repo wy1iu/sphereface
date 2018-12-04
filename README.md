@@ -8,7 +8,7 @@ SphereFace is released under the MIT License (refer to the LICENSE file for deta
 
 ### Update
 - **2018.8.14**: We recommand an interesting ECCV 2018 paper that comprehensively evaluates SphereFace (A-Softmax) on current widely used face datasets and their proposed noise-controlled IMDb-Face dataset. Interested users can try to train SphereFace on their IMDb-Face dataset. Take a look [here](https://arxiv.org/pdf/1807.11649.pdf).
-- **2018.5.23**: A new *SphereFace+* that explicitly enhances the inter-class separability has been introduced in our technical report. Check it out [here](https://arxiv.org/abs/1805.09298). Code will be released soon.
+- **2018.5.23**: A new *SphereFace+* that explicitly enhances the inter-class separability has been introduced in our technical report. Check it out [here](https://arxiv.org/abs/1805.09298). Code is released [here](https://github.com/wy1iu/sphereface-plus).
 - **2018.2.1**: As requested, the prototxt files for SphereFace-64 are released.
 - **2018.1.27**: We updated the appendix of our SphereFace paper with useful experiments and analysis. Take a look [here](http://wyliu.com/papers/LiuCVPR17v3.pdf). The content contains:
 	- The intuition of removing the last ReLU;
@@ -231,6 +231,7 @@ Details:
 - TensorFlow: [code](https://github.com/HiKapok/tf.extra_losses) by [HiKapok](https://github.com/HiKapok).
 - TensorFlow: [code](https://github.com/andrewhuman/sphereloss_tensorflow) by [andrewhuman](https://github.com/andrewhuman).
 - MXNet: [code](https://github.com/deepinsight/insightface) by [deepinsight](https://github.com/deepinsight) (by setting loss-type=1: SphereFace).
+- Model compression for SphereFace: [code](https://github.com/isthatyoung/Sphereface-prune) by [Siyang Liu](https://github.com/isthatyoung) (useful in practice)
 - Caffe2: [code](https://github.com/tpys/face-recognition-caffe2) by [tpys](https://github.com/tpys).
 - Trained on MS-1M: [code](https://github.com/KaleidoZhouYN/Sphereface-Ms-celeb-1M) by [KaleidoZhouYN](https://github.com/KaleidoZhouYN).
 - System: [A cool face demo system](https://github.com/tpys/face-everthing) using SphereFace by [tpys](https://github.com/tpys).
