@@ -8,7 +8,7 @@ SphereFace is released under the MIT License (refer to the LICENSE file for deta
 
 ### Update
 - **2022.4.10**: **If you are looking for an easy-to-use and well-performing PyTorch implementation of SphereFace, we now have it! Check out our official SphereFace PyTorch re-implementation [here](https://opensphere.world/).**
-- **2018.8.14**: We recommand an interesting ECCV 2018 paper that comprehensively evaluates SphereFace (A-Softmax) on current widely used face datasets and their proposed noise-controlled IMDb-Face dataset. Interested users can try to train SphereFace on their IMDb-Face dataset. Take a look [here](https://arxiv.org/pdf/1807.11649.pdf).
+- **2018.8.14**: We recommend an interesting ECCV 2018 paper that comprehensively evaluates SphereFace (A-Softmax) on current widely used face datasets and their proposed noise-controlled IMDb-Face dataset. Interested users can try to train SphereFace on their IMDb-Face dataset. Take a look [here](https://arxiv.org/pdf/1807.11649.pdf).
 - **2018.5.23**: A new *SphereFace+* that explicitly enhances the inter-class separability has been introduced in our technical report. Check it out [here](https://arxiv.org/abs/1805.09298). Code is released [here](https://github.com/wy1iu/sphereface-plus).
 - **2018.2.1**: As requested, the prototxt files for SphereFace-64 are released.
 - **2018.1.27**: We updated the appendix of our SphereFace paper with useful experiments and analysis. Take a look [here](http://wyliu.com/papers/LiuCVPR17v3.pdf). The content contains:
@@ -16,7 +16,7 @@ SphereFace is released under the MIT License (refer to the LICENSE file for deta
 	- Why do we want to normalize the weights other than because we need more geometric interpretation?
 	- Empirical experiment of zeroing out the biases;
 	- More 2D visualization of A-Softmax loss on MNIST;
-	- **Angular Fisher score** for evaluating the angular feature discriminativeness, which is a new and straightforward evluation metric other than the final accuracy.
+	- **Angular Fisher score** for evaluating the angular feature discriminativeness, which is a new and straightforward evaluation metric other than the final accuracy.
 	- Experiments of SphereFace on MegaFace with different convolutional layers;
 	- The annealing optimization strategy for A-Softmax loss;
 	-  Details of the 3-patch ensemble strategy in MegaFace challenge;
@@ -43,7 +43,7 @@ The repository contains the entire pipeline (including all the preprocessings) f
 
 SphereFace is a recently proposed face recognition method. It was initially described in an [arXiv technical report](https://arxiv.org/abs/1704.08063) and then published in [CVPR 2017](http://openaccess.thecvf.com/content_cvpr_2017/papers/Liu_SphereFace_Deep_Hypersphere_CVPR_2017_paper.pdf). The most up-to-date paper with more experiments can be found at [arXiv](https://arxiv.org/abs/1704.08063) or [here](http://wyliu.com/papers/LiuCVPR17v3.pdf). To facilitate the face recognition research, we give an example of training on [CAISA-WebFace](http://www.cbsr.ia.ac.cn/english/CASIA-WebFace-Database.html) and testing on [LFW](http://vis-www.cs.umass.edu/lfw/) using the **20-layer CNN architecture** described in the paper (i.e. SphereFace-20). 
 
-In SphereFace, our network architecures use residual units as building blocks, but are quite different from the standrad ResNets  (e.g., BatchNorm is not used, the prelu replaces the relu, different initializations, etc). We proposed 4-layer, 20-layer, 36-layer and 64-layer architectures for face recognition (details can be found in the [paper]((https://arxiv.org/pdf/1704.08063.pdf)) and [prototxt files](https://github.com/wy1iu/sphereface/blob/master/train/code/sphereface_model.prototxt)). We provided the 20-layer architecure as an example here. If our proposed architectures also help your research, please consider to cite our paper.
+In SphereFace, our network architectures use residual units as building blocks, but are quite different from the standrad ResNets  (e.g., BatchNorm is not used, the prelu replaces the relu, different initializations, etc). We proposed 4-layer, 20-layer, 36-layer and 64-layer architectures for face recognition (details can be found in the [paper]((https://arxiv.org/pdf/1704.08063.pdf)) and [prototxt files](https://github.com/wy1iu/sphereface/blob/master/train/code/sphereface_model.prototxt)). We provided the 20-layer architecture as an example here. If our proposed architectures also help your research, please consider to cite our paper.
 
 SphereFace achieves the state-of-the-art verification performance (previously No.1) in [MegaFace Challenge](http://megaface.cs.washington.edu/results/facescrub.html#3) under the small training set protocol.
 
@@ -192,7 +192,7 @@ Details:
 1. It is an **open-set** face recognition scenario. The video is processed frame by frame, following the same pipeline in this repository.
 2. Gallery set consists of 6 identities. Each main character has only 1 gallery face image. All the detected faces are included in probe set.
 3. There is no overlap between gallery set and training set (CASIA-WebFace).
-4. The scores between each probe face and gallery set are computed by cosine similarity. If the maximal score of a probe face is smaller than a pre-definded threshold, the probe face would be considered as an outlier.
+4. The scores between each probe face and gallery set are computed by cosine similarity. If the maximal score of a probe face is smaller than a pre-defined threshold, the probe face would be considered as an outlier.
 5. Main characters are labeled by boxes with different colors. (
 ![#ff0000](https://placehold.it/15/ff0000/000000?text=+)Rachel,
 ![#ffff00](https://placehold.it/15/ffff00/000000?text=+)Monica,
